@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="header">
+    <a href="home.html" class="logo">travel.</a>
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="about.html">about</a>
+        <a href="package.html">package</a>
+        <a href="book.html">book</a>
+    </nav>
+</section>
+
+<div class="heading">
+    <h1>Book Now</h1>
+</div>
+
+<section class="booking">
+    <h2>Book Your Trip!</h2>
+  
+    <form action="process_booking.php" method="post">
+
+        <div class="inputBox">
+            <span>Name:</span>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Email:</span>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Phone:</span>
+            <input type="text" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Address:</span>
+            <input type="text" name="address" placeholder="Enter your address" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Where to:</span>
+            <input type="text" name="location" placeholder="Place you want to visit" required>
+        </div>
+
+        <div class="inputBox">
+            <span>How many:</span>
+            <input type="number" name="guests" placeholder="Number of guests" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Arrival Date:</span>
+            <input type="date" name="arrivals" required>
+        </div>
+
+        <div class="inputBox">
+            <span>Leaving Date:</span>
+            <input type="date" name="leaving" required>
+        </div>
+
+        <input type="submit" value="Submit" name="submit">
+    </form>
+ 
+</section>
+<!-- footer section ends  -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
